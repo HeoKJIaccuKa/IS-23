@@ -1,7 +1,14 @@
-import numpy as np
+x = int(input("Введите число Х: "))
+y = int(input("Введите число У: "))
 
-x,y = list(np.random.choice(range(+6, 11), 2))
-print("x = {0}, y = {1}".format(x,y))
+if x>0 and y>0:
+    print("I-я")
 
-b = (x > 0 and y > 0)
-print("Точка лежит во 2-й координатной четверти: ", b)
+if x<0 and y>0:
+    print("II-я")
+
+if x<0 and y<0:
+    print("III-я")
+
+if x>0 and y<0:
+    print("IV-я")
